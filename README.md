@@ -8,8 +8,8 @@ Here are the specs used in this project:
 * Configuration Management: Ansible
 * IAAS : Terraform
 * Cloud provider : AWS
-* Docker 1.12+
-* Wordpress official Docker image https://hub.docker.com/_/wordpress/
+* Docker
+* Wordpress
 * DB mysql
 * Prometheus
 * cAdvisor
@@ -57,7 +57,7 @@ username - admin password - foobar (Password is stored in the config.monitoring 
 * Click `Data Sources`
 * Click the green button `Add Data Source`.
 
-(<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/blob/master/images/conf_grafana.png" width="400" heighth="400">)
+<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/blob/master/images/conf_grafana.png" width="400" heighth="400">
 
 ## Install Dashboard
 Dashboard template which is available on [Grafana Docker Dashboard](https://grafana.net/dashboards/179). Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import
@@ -94,3 +94,7 @@ Terraform v0.10.7
 ```
 
 ## Troubleshooting
+* pip freeze ( To verify the install package version )
+* Run ansible command line to verify and provide private key used to verify any authentication issue 
+* More details on [docker_service] (http://docs.ansible.com/ansible/latest/docker_service_module.html)
+* Terraform Module to run ansible playbooks [terraform-null-ansible](https://github.com/cloudposse/terraform-null-ansible)

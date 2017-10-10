@@ -3,6 +3,7 @@ provider "aws" {
     secret_key = "${var.AWS_SECRET_ACCESS_KEY}"
     region = "${var.aws_region}"
 }
+# Port whitelisting 
 resource "aws_security_group" "default" {
     name = "wp-${var.APP_NAME}-${var.USER_NAME}"
     description = "app ingress/egress"
@@ -71,7 +72,7 @@ resource "aws_instance" "web" {
         Name = "wp-demo-${var.APP_NAME}-${var.USER_NAME}"
     }
 }
-
+# Using terraform module to run ansible playbooks
 module "ansible_provisioner" {
    source    = "github.com/cloudposse/tf_ansible"
    arguments = ["--user=ubuntu --private-key=/tmp/deploy_user.pem"]
