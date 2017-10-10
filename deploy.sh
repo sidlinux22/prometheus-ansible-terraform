@@ -74,6 +74,8 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cd terraform/aws
+    terraform init
+    terraform get
     terraform apply .
 else 
    echo "Exiting .."
