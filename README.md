@@ -57,15 +57,21 @@ username - admin password - foobar (Password is stored in the config.monitoring 
 * Click `Data Sources`
 * Click the green button `Add Data Source`.
 
-(<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/tree/master/images/conf_grafana.png" width="400" heighth="400">)
+(<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/blob/master/images/conf_grafana.png" width="400" heighth="400">)
 
 ## Install Dashboard
 Dashboard template which is available on [Grafana Docker Dashboard](https://grafana.net/dashboards/179). Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import
 
 Grafana Dashboard :
-![Grafana Dashboard](https://github.com/vegasbrianc/sidlinux22/prometheus-ansible-terraform/tree/master/images/docker-dashboard_rev5.png =100x20)
+[Grafana Dashboard]
 
-![](https://github.com/vegasbrianc/sidlinux22/prometheus-ansible-terraform/tree/master/images/System_Monitoring.png =100x20)
+
+<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/blob/master/images/System_Monitoring.png" width="400" heighth="600">
+
+
+
+
+<img src="https://github.com/sidlinux22/prometheus-ansible-terraform/blob/master/images/docker-dashboard_rev5.png" width="400" heighth="400">
 
 ```
 dashboards/Grafana_Dashboard.json
